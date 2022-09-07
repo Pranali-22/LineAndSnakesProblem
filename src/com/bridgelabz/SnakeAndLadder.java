@@ -20,10 +20,14 @@ public class SnakeAndLadder {
 		
 		//Code to get random die number
 		Random r=new Random();
-		int roll=r.nextInt(6)+1;
-		System.out.println("number on die : "+roll);
+		//int roll=r.nextInt(6)+1;
+		int roll;
+		//System.out.println("number on die : "+roll);
 		
 		//code to check for option
+		while(position<100) {
+		roll=r.nextInt(6)+1;
+		System.out.println("number on die : "+roll);
 		int option=r.nextInt(3);
 		switch (option) {
 			case 0:
@@ -52,6 +56,7 @@ public class SnakeAndLadder {
 				break;
 		}
 
+		}
 		System.out.println("current position is "+position);
 	}
 
